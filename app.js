@@ -85,7 +85,7 @@ function drawHotspot(seg) {
           font-size:15px;
           color:${riskColor};
           margin-bottom:6px;">
-          ⚠ ${riskText}
+          ⚠️ ${riskText}
         </div>
 
         <div style="font-weight:bold;">
@@ -183,10 +183,10 @@ function checkAlert(pos) {
       const isExtreme = h.level === "Extreme";
 
       const message = isExtreme
-        ? "&#9888; EXTREME wildlife collision risk ahead on " +
+        ? "⚠️ EXTREME wildlife collision risk ahead on " +
           h.name +
           ". Slow down immediately."
-        : "&#9888; High wildlife collision risk ahead on " +
+        : "⚠️ High wildlife collision risk ahead on " +
           h.name +
           ". Reduce speed and stay alert.";
 
