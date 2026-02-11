@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>VisionSafe</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="riskBanner" class="risk-banner hidden"></div>
+    <h1>VisionSafe Hotspot Demo</h3>
+    <div id="filter-box">
+      Road Name:
+      <input type="text" id="roadFilter" placeholder="PRINCES HIGHWAY" />
+      Time:
+      <select id="timeFilter">
+        <option value="">All</option>
+        <option value="Night">Night</option>
+        <option value="Dawn">Dawn</option>
+        <option value="Day">Day</option>
+        <option value="Dusk">Dusk</option>
+      </select>
+
+      Species:
+      <select id="speciesFilter">
+        <option value="">All</option>
+        <option value="kangaroo">Kangaroo</option>
+        <option value="wallaby">Wallaby</option>
+        <option value="wombat">Wombat</option>
+        <option value="koala">Koala</option>
+      </select>
+
+      <button onclick="loadHotspots()">Find Danger Zones</button>
+    </div>
+
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  font-size: 17 rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+h1 {
+  color: #d97706;
+}
+button {
+  background-color: #45c2e4;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #d97706;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+#map {
+  height: 90vh;
+  width: 100%;
+}
+
+#filter-box {
+  padding-bottom: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.risk-banner {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  max-width: 90%;
+  text-align: center;
+}
+
+.risk-banner.show {
+  opacity: 1;
+}
+
+.risk-banner.high {
+  background-color: #d97706; /* orange */
+}
+
+.risk-banner.extreme {
+  background-color: #b30000; /* dark red */
+}
+
+.hidden {
+  display: none;
+}
