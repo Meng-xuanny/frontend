@@ -183,10 +183,10 @@ function checkAlert(pos) {
       const isExtreme = h.level === "Extreme";
 
       const message = isExtreme
-        ? "⚠ EXTREME wildlife collision risk ahead on " +
+        ? "&#9888; EXTREME wildlife collision risk ahead on " +
           h.name +
           ". Slow down immediately."
-        : "⚠ High wildlife collision risk ahead on " +
+        : "&#9888; High wildlife collision risk ahead on " +
           h.name +
           ". Reduce speed and stay alert.";
 
